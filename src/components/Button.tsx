@@ -23,7 +23,7 @@ const Button = ({children,onClick,color}:PropsType) => {
   )
 }
 
-const ButtonDanger = ({children,onClick}:PropsType) => {
+const ButtonDanger = ({children,onClick,color}:PropsType) => {
   return (
     <button
         onClick={onClick}
@@ -41,7 +41,7 @@ const ButtonDanger = ({children,onClick}:PropsType) => {
   )
 }
 
-const ButtonSuccess = ({children,onClick}:PropsType) => {
+const ButtonSuccess = ({children,onClick,color}:PropsType) => {
   return (
     <button
         onClick={onClick}
