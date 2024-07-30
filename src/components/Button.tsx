@@ -2,16 +2,17 @@ import  { ReactNode } from 'react'
 import * as React from 'react'
 type PropsType={
   children: ReactNode,
-  onClick?: ()=>void
+  onClick?: ()=>void,
+  color: string
 }
-const Button = ({children,onClick}:PropsType) => {
+const Button = ({children,onClick,color}:PropsType) => {
   return (
     <button
         onClick={onClick}
         style={{
-            padding: '2px',
-            borderRadius:'5px',
-            backgroundColor:'blue',
+            padding: '8px',
+            borderRadius:'10px',
+            backgroundColor: color,
             color:'white',
             cursor:"pointer",
             border:"none",    
@@ -22,9 +23,10 @@ const Button = ({children,onClick}:PropsType) => {
   )
 }
 
-const ButtonDanger = ({children}:PropsType) => {
+const ButtonDanger = ({children,onClick}:PropsType) => {
   return (
     <button
+        onClick={onClick}
         style={{
             padding: '2px',
             borderRadius:'5px',
@@ -39,9 +41,10 @@ const ButtonDanger = ({children}:PropsType) => {
   )
 }
 
-const ButtonSuccess = ({children}:PropsType) => {
+const ButtonSuccess = ({children,onClick}:PropsType) => {
   return (
     <button
+        onClick={onClick}
         style={{
             padding: '2px',
             borderRadius:'5px',
