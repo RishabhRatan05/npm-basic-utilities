@@ -3,7 +3,7 @@ import * as React from 'react'
 type PropsType={
   children: ReactNode,
   onClick?: ()=>void,
-  color: string
+  color?: string
 }
 const Button = ({children,onClick,color}:PropsType) => {
   return (
